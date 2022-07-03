@@ -1,0 +1,28 @@
+{{define "index"}}
+
+  {{template "header"}}
+  
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Главная страница</h1>
+       
+        {{ range . }}
+        
+        <div class="d-flex justify-content-between p-2">
+          <h2>{{.Title}}</h2>
+          <h2>{{.Anons}}</h2>
+          
+          <h2>{{.FullText}}</h2>
+         <tb> <a href="/post/{{.Id}}" class="btn btn-danger">читать далее</a></tb>
+          </div>
+          {{else}}  
+          <p>clss="lead" Пусто</p>
+        </div>
+  
+        {{end}}
+
+        <p class="lead">
+        </p>
+      </main>
+    {{template "footer"}}
+
+    {{end}}

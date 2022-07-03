@@ -1,0 +1,1 @@
+# A site with various tabs where you can enter data that will be stored in the database, they are displayed on the main screen. When you click on the "читать далее" button, the "ID" of the user will be displayed.
